@@ -1,0 +1,160 @@
+/* Скидання базових стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стилі для тіла */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-image: url('AMJ_Service_HomeDeliver_Crop.jpg'); /* Замініть на ваш шлях до зображення */
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Основний контейнер */
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(20, 20, 30, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Шапка */
+.header {
+    padding: 25px;
+    text-align: center;
+    background: rgba(58, 58, 80, 0.8);
+}
+
+.logo-placeholder {
+    color: #ffcc00;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Markazi Text', serif;
+}
+
+/* Основний контент */
+.content {
+    padding: 40px 30px;
+    text-align: center;
+    background: rgba(37, 37, 53, 0.8);
+}
+
+.content h1 {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+    color: #ffcc00;
+    font-family: 'Markazi Text', serif;
+}
+
+.content p {
+    font-size: 1.3rem;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+}
+
+/* Секція послуг */
+.services {
+    margin: 20px;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.services h2 {
+    font-size: 4rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    font-family: 'Markazi Text', serif;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.services li {
+    font-size: 1.5rem;
+    color: #dcdcdc;
+    padding: 5px 0;
+}
+
+/* Футер */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #3a3a50;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-button {
+    color: #ffffff;
+    background: #d2ae21;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-button:hover {
+    background: #080237;
+    transform: scale(1.05);
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .logo-placeholder {
+        font-size: 4rem;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    .services h2 {
+        font-size: 2.5rem;
+    }
+
+    .services li {
+        font-size: 1.2rem;
+    }
+
+    .contact-button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}
